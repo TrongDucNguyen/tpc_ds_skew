@@ -70,7 +70,7 @@ MatchDistWeight	dist.c	/^int MatchDistWeight(void *dest, char *szDist, int nWeig
 Modulus	genrand.c	/^static HUGE_TYPE Modulus = 2147483647;  \/* trick you use to get 64 bit int *\/$/;"	v	file:
 Mult	genrand.c	/^static long Mult = 16807;       \/* the multiplier *\/$/;"	v	file:
 Multiplier	genrand.c	/^static HUGE_TYPE Multiplier = 16807;    \/* or whatever nonstandard *\/$/;"	v	file:
-NthElement	genrand.c	/^NthElement (HUGE_TYPE N, int nStream)$/;"	f
+NthElement	genrand.c	/^NthElement(HUGE_TYPE N, int nStream)$/;"	f
 OPTION_START	r_params.c	73;"	d	file:
 OPTION_START	r_params.c	75;"	d	file:
 PARAM_MAX_LEN	r_params.c	49;"	d	file:
@@ -92,7 +92,7 @@ ProcessStr	grammar.c	/^ProcessStr (char *stmt, token_t * tokens)$/;"	f
 ProcessTypes	dcgram.c	/^ProcessTypes (char *stmt, token_t * tokens)$/;"	f
 REALLOC	dcgram.c	54;"	d	file:
 REALLOC	dcgram.c	57;"	d	file:
-RNGReset	genrand.c	/^RNGReset (int tbl)$/;"	f
+RNGReset	genrand.c	/^RNGReset(int tbl)$/;"	f
 ReportError	error_msg.c	/^ReportError (int nError, char *msg, int bExit)$/;"	f
 ReportErrorNoLine	error_msg.c	/^ReportErrorNoLine (int nError, char *msg, int bExit)$/;"	f
 ResetBuffer	StringBuffer.c	/^int ResetBuffer(StringBuffer_t *pBuf)$/;"	f
@@ -173,7 +173,7 @@ doomsday	date.c	/^static int doomsday[4] = {3, 2, 0, 5};$/;"	v	file:
 dttoj	date.c	/^dttoj(date_t *dt)$/;"	f
 dttostr	date.c	/^dttostr(date_t *d)$/;"	f
 dump_dist	dist.c	/^dump_dist(char *name)$/;"	f
-dump_seeds	genrand.c	/^dump_seeds (int tbl)$/;"	f
+dump_seeds	genrand.c	/^dump_seeds(int tbl)$/;"	f
 embed_string	build_support.c	/^embed_string(char *szDest, char *szDist, int nValue, int nWeight, int nStream)$/;"	f
 env_config	misc.c	/^env_config (char *var, char *dflt)$/;"	f
 expr	qgen.y	/^expr:				TOK_LITERAL	$/;"	l
@@ -262,17 +262,17 @@ g_w_web_returns	w_web_returns.c	/^struct W_WEB_RETURNS_TBL g_w_web_returns;$/;"	
 g_w_web_sales	w_web_sales.c	/^struct W_WEB_SALES_TBL g_w_web_sales;$/;"	v	typeref:struct:W_WEB_SALES_TBL
 g_w_web_site	s_web_site.c	/^struct W_WEB_SITE_TBL g_w_web_site;$/;"	v	typeref:struct:W_WEB_SITE_TBL
 g_w_web_site	w_web_site.c	/^struct W_WEB_SITE_TBL g_w_web_site;$/;"	v	typeref:struct:W_WEB_SITE_TBL
-gen_charset	genrand.c	/^gen_charset (char *dest, char *set, int min, int max, int stream)$/;"	f
+gen_charset	genrand.c	/^gen_charset(char *dest, char *set, int min, int max, int stream)$/;"	f
 gen_tbl	driver.c	/^gen_tbl (int tabid, ds_key_t kFirstRow, ds_key_t kRowCount)$/;"	f
 gen_text	text.c	/^gen_text(char *dest, int min, int max, int stream)$/;"	f
 generateQueryStreams	QgenMain.c	/^generateQueryStreams(void)$/;"	f
-genrand_date	genrand.c	/^genrand_date (date_t * dest, int dist, date_t * min, date_t * max,$/;"	f
-genrand_decimal	genrand.c	/^genrand_decimal (decimal_t * dest, int dist, decimal_t * min, decimal_t * max,$/;"	f
-genrand_email	genrand.c	/^genrand_email (char *pEmail, char *pFirst, char *pLast, int nColumn)$/;"	f
-genrand_integer	genrand.c	/^genrand_integer (int *dest, int dist, int min, int max, int mean, int stream)$/;"	f
-genrand_ipaddr	genrand.c	/^genrand_ipaddr (char *pDest, int nColumn)$/;"	f
-genrand_key	genrand.c	/^genrand_key (ds_key_t * dest, int dist, ds_key_t min, ds_key_t max,$/;"	f
-genrand_url	genrand.c	/^genrand_url (char *pDest, int nColumn)$/;"	f
+genrand_date	genrand.c	/^genrand_date(date_t * dest, int dist, date_t * min, date_t * max,$/;"	f
+genrand_decimal	genrand.c	/^genrand_decimal(decimal_t * dest, int dist, decimal_t * min, decimal_t * max,$/;"	f
+genrand_email	genrand.c	/^genrand_email(char *pEmail, char *pFirst, char *pLast, int nColumn)$/;"	f
+genrand_integer	genrand.c	/^genrand_integer(int *dest, int dist, int min, int max, int mean, int stream)$/;"	f
+genrand_ipaddr	genrand.c	/^genrand_ipaddr(char *pDest, int nColumn)$/;"	f
+genrand_key	genrand.c	/^genrand_key(ds_key_t * dest, int dist, ds_key_t min, ds_key_t max,$/;"	f
+genrand_url	genrand.c	/^genrand_url(char *pDest, int nColumn)$/;"	f
 getCatalogNumberFromPage	join.c	/^getCatalogNumberFromPage(ds_key_t kPageNumber)$/;"	f
 getDateWeightFromJulian	date.c	/^getDateWeightFromJulian(jDay, nDistribution)$/;"	f
 getFirstSK	scd.c	/^getFirstSK(ds_key_t kID)$/;"	f
@@ -301,7 +301,7 @@ include_file	grammar_support.c	/^include_file(char *fn, void *pC)$/;"	f
 include_statement	qgen.y	/^include_statement:	'#' KW_INCLUDE path$/;"	l
 initSparseKeys	sparse.c	/^initSparseKeys(int nTable)$/;"	f
 init_params	r_params.c	/^init_params(void)$/;"	f
-init_rand	genrand.c	/^init_rand (void)$/;"	f
+init_rand	genrand.c	/^init_rand(void)$/;"	f
 is_leap	date.c	/^is_leap(int year)$/;"	f
 is_set	r_params.c	/^is_set(char *flag)$/;"	f
 itodec	decimal.c	/^itodec(decimal_t *dest, int src)$/;"	f
@@ -395,7 +395,7 @@ main	dcomp.c	/^int main(int argc, char* argv[])$/;"	f
 main	decimal.c	/^main()$/;"	f
 main	dist.c	/^main()$/;"	f
 main	driver.c	/^main (int ac, char **av)$/;"	f
-main	genrand.c	/^main ()$/;"	f
+main	genrand.c	/^main()$/;"	f
 main	mkheader.c	/^main(int ac, char **av)$/;"	f
 main	r_params.c	/^main()$/;"	f
 main	text.c	/^main()$/;"	f
@@ -517,8 +517,8 @@ nUpdatePercentage	scaling.c	/^   int	nUpdatePercentage;$/;"	m	struct:SCALING_T	f
 nWarncnt	grammar_support.c	/^static int nWarncnt = 0;$/;"	v	file:
 name	dist.c	/^struct {char *name;} tdefs[] = {NULL};$/;"	m	struct:__anon1	file:
 name	text.c	/^typedef struct {char *name;} tdef;$/;"	m	struct:__anon2	file:
-next_random	genrand.c	/^next_random (int stream)$/;"	f
-next_random_float	genrand.c	/^next_random_float (int stream)$/;"	f
+next_random	genrand.c	/^next_random(int stream)$/;"	f
+next_random_float	genrand.c	/^next_random_float(int stream)$/;"	f
 nullCheck	nulls.c	/^nullCheck(int nColumn)$/;"	f
 nullSet	nulls.c	/^nullSet(ds_key_t *pDest, int nStream)$/;"	f
 openDeleteFile	print.c	/^openDeleteFile(int bOpen)$/;"	f
@@ -661,7 +661,7 @@ set_precision	decimal.c	/^set_precision(decimal_t *dest, int scale, int precisio
 set_pricing	pricing.c	/^void set_pricing(int nTabId, ds_pricing_t *pPricing)$/;"	f
 set_str	r_params.c	/^set_str(char *var, char *val)$/;"	f
 skipDays	driver.c	/^skipDays(int nTable, ds_key_t *pRemainder)$/;"	f
-skip_random	genrand.c	/^skip_random (int nStream, ds_key_t N)$/;"	f
+skip_random	genrand.c	/^skip_random(int nStream, ds_key_t N)$/;"	f
 split_work	parallel.c	/^split_work (int tnum, ds_key_t * pkFirstRow, ds_key_t * pkRowCount)$/;"	f
 statement	qgen.y	/^statement:	include_statement	{$$ = KW_INCLUDE; }$/;"	l
 statement_list	qgen.y	/^statement_list:	statement$/;"	l
